@@ -15,7 +15,7 @@ Step Two:
 ```bash
 server {
 listen 7443;
-    server_name  clpuat.nccbank.com.bd;
+    server_name  uat.applicationname.com;
     location / {
         proxy_pass http://localhost:7444/;
         access_log /var/log/nginx/api_logging.log;
