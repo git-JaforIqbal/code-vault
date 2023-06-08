@@ -1,3 +1,20 @@
+Enable https in Firewall:
+```bash
+firewall-cmd --permanent --zone=public  --add-service=https
+```
+Relode filewall:
+```bash
+firewall-cmd --reload
+```
+Nginx config file path in redhat: 
+```bash
+ /etc/nginx/nginx.conf
+```
+Edit config and set your ssl certificate file path like mention in step one: 
+```bash
+ /etc/nginx/nginx.conf
+```
+
 Step One: 
 ```bash
 sudo 
@@ -5,7 +22,7 @@ sudo
         listen 443;
         #ssl on;
         ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
-        server_name  clpuat.nccbank.com.bd;
+        server_name  appuat.mysite.com.bd;
 
         #listen       80 default_server;
         #listen       [::]:80 default_server;
@@ -28,6 +45,14 @@ sudo
 }
       ssl on;
       ssl_certificate /home/appuser/ssl/file.pem;
-      ssl_certificate_key /home/appuser/ssl/star_nccbank_com_bd.key;
+      ssl_certificate_key /home/appuser/ssl/star_com.key;
       
 ```
+
+Step Two:
+```bash
+ systemctl restart nginx
+```
+
+
+
