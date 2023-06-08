@@ -2,7 +2,7 @@ Enable https in Firewall:
 ```bash
 firewall-cmd --permanent --zone=public  --add-service=https
 ```
-Relode filewall:
+Reloade filewall:
 ```bash
 firewall-cmd --reload
 ```
@@ -14,6 +14,7 @@ Edit config and set your ssl certificate file path like mention in step one:
 ```bash
  /etc/nginx/nginx.conf
 ```
+Upload the certificates on the server where your website is hosted.
 
 Step One: 
 ```bash
