@@ -1,5 +1,4 @@
-    
-    ```bash
+
     server {
         listen 443;
         #ssl on;
