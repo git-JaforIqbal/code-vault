@@ -1,4 +1,6 @@
-
+Step One: 
+```bash
+sudo 
     server {
         listen 443;
         #ssl on;
