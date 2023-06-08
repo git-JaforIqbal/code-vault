@@ -12,7 +12,7 @@ Nginx config file path in redhat:
 ```
 Edit config and set your ssl certificate file path like mention in step one: 
 ```bash
- /etc/nginx/nginx.conf
+ nano /etc/nginx/nginx.conf
 ```
 Upload the certificates on the server where your website is hosted.
 
