@@ -1,5 +1,5 @@
     
-    
+    ```bash
     server {
         listen 443;
         #ssl on;
@@ -28,3 +28,5 @@
       ssl on;
       ssl_certificate /home/appuser/ssl/file.pem;
       ssl_certificate_key /home/appuser/ssl/star_nccbank_com_bd.key;
+      
+```
